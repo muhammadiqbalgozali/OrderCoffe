@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".DetailPesanan">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textSize="30sp"
+        android:text="DETAIL ORDER"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+<!--Data detail-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <!--Nama Pemesan-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:textSize="20sp"
+            android:text="NAMA PEMESAN :"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_detailnamapemesan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <!--Alamat Pemesan-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:textSize="20sp"
+            android:text="NOMER MEJA :"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_detailnomermeja"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <!--Nama Menu-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textSize="20sp"
+            android:text="NAMA MENU :"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_detailnamamenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <!--Harga-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textSize="20sp"
+            android:text="HARGA :"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_detailharga"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <!--jumlah pesanan-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:textSize="20sp"
+            android:text="Jumlah Pesanan :"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_detailjumlahpesanan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <!--Button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="150sp"
+            android:layout_height="80sp"
+          android:layout_gravity="center"
+            android:layout_margin="55sp"
+            android:text="BACK"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_kirim"
+                android:layout_width="150sp"
+                android:layout_height="80sp"
+                android:layout_gravity="center"
+                android:layout_margin="55sp"
+                android:text="KIRIM ->"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
